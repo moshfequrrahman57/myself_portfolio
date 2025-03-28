@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.clip-end-dup{
+    clip-path: circle(900px);
+ }
+.active{
+    display: flex;
+}
+.not_active{
+    display: none;
+}
+.no-scroll{
+    overflow: hidden;
+  }
+.opacity_full{
+    @apply opacity-100;
+}
+.opacity_low{
+    @apply opacity-10;
+}
+
+.rotate_180{
+    @apply rotate-180;
+}
+.blur_filter{
+ display: flex;
+  backdrop-filter: blur(50px);
+  @apply absolute  top-0 left-0 w-full h-screen bg-emerald-300 -z-10;
+}
+
+
+
+@layer utilities{
+   .clip-start {
+        clip-path: circle(0px at right bottom);
+ 
+    }
+
+    .object_top{
+        object-position: 0% 50%;
+    }
+    .filter_color_blue{
+        filter: invert(72%) sepia(61%) saturate(6928%) hue-rotate(162deg) brightness(95%) contrast(101%);
+    }
+    .filter_color_semi_white{
+        filter: invert(100%) sepia(79%) saturate(164%) hue-rotate(134deg) brightness(112%) contrast(97%);
+    }
+    .webkit-text-outline-dark{
+        color: red;
+        -webkit-text-fill-color: rgb(121, 106, 122);
+        -webkit-text-stroke: 3px rgb(236, 229, 229);
+       
+    }
+    .webkit-text-outline{
+        color: black;
+        -webkit-text-fill-color: rgb(255, 251, 250);
+        -webkit-text-stroke: 3px rgb(235, 70, 139);
+        
+    }
+    .filter_color_citrine{
+        filter: invert(75%) sepia(43%) saturate(1033%) hue-rotate(8deg) brightness(104%) contrast(92%);
+    }
+    .filter_color_celadon{
+        filter: invert(93%) sepia(12%) saturate(834%) hue-rotate(60deg) brightness(97%) contrast(82%);
+    }
+    .animation_before{
+        @apply translate-y-0  opacity-70 duration-[1500ms] transition-all;
+    }
+    .anim{
+        @apply -translate-y-10 opacity-100;
+    }
+
+    .animation_service{
+        @apply   opacity-20 duration-[1500ms] transition-all;
+    }
+    .anim_ser_after{
+        @apply  opacity-100;
+    }
+
+    .animation_skill{
+        @apply translate-y-0  opacity-20 duration-[1000ms] hover:scale-100  transition-all;
+    }
+    .anim_skill{
+        @apply -translate-y-10 opacity-100 hover:scale-105;
+    }
+    .grid_columns_3{
+         grid-auto-columns: calc(calc(100% /3) - 0px);
+    }
+    .grid_columns_2{
+        grid-auto-columns: calc(calc(100% /2) - 0px);
+    }
+    .grid_columns_1{
+        grid-auto-columns: calc(calc(100%) - 0px);
+    }
+}
+
+@layer components{
+    .important_link_design{
+        @apply w-9 h-9 p-1 mr-2 hover:filter_color_blue dark:filter_color_semi_white;
+    }
+    .important_link_in_profile{
+        @apply w-10 h-10 rounded-full  mr-2 filter_color_celadon hover:filter_color_blue dark:filter_color_citrine;
+    }
+    .nav_item{
+        @apply md:mx-1 mt-1 md:mt-0 w-full md:w-fit flex items-center justify-start rounded-lg  hover:bg-slate-100 dark:hover:bg-slate-700 ;
+    }
+    .ul_svg{
+        @apply md:hidden w-9 h-9 p-1 dark:filter_color_semi_white;
+    }
+    .ul_span{
+        @apply mx-2 md:px-1 text-gray-900 font-bold text-lg md:text-base flex items-center justify-center dark:text-white;
+    }
+    .skill_card{
+        @apply w-full  border flex flex-col items-center justify-start  bg-slate-100 shadow-md p-4 rounded-md;
+    }
+    .dlText{
+        @apply text-3xl font-bold text-gray-800  dark:text-gray-50 
+    }
+    .dlmText{
+        @apply text-2xl font-bold text-gray-800  dark:text-gray-50 
+    }
+    .dlsText{
+        @apply text-xl font-semibold text-justify text-gray-800  dark:text-gray-100 
+    }
+    .dlxText{
+        @apply text-lg font-semibold text-justify text-gray-600  dark:text-gray-300 
+    }
+  
+    
+}
+
