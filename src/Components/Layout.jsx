@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Services from "./Services";
 import Profile from "./Profile";
 import Skills from "./Skills";
@@ -34,6 +34,24 @@ const Layout = (props) => {
     }
     const moveToService=()=>{
       console.log("Service button clicked");
+      if(windowQuality===6){
+        console.log("mobile");
+        layout_div.current.scrollTop=2250;
+      }
+      else if(windowQuality===5){
+        console.log("medium");
+        layout_div.current.scrollTop=1450;
+      }
+      else if(windowQuality===4){
+        console.log("large");
+        layout_div.current.scrollTop=1200;
+      }
+      // layout_div.current.scrollTop=0;
+      nav.current.classList.toggle("clip-end-dup");
+    }
+
+    const moveToProjects=()=>{
+      console.log("Project button clicked");
       if(windowQuality===6){
         console.log("mobile");
         layout_div.current.scrollTop=2250;
@@ -139,8 +157,11 @@ function getBreakPoint(){
 }
 /// breakpoint end
 
-
-
+// const [isOpen,setIsOpen]=useState(false);
+const handleOpen=useCallback(()=>{
+  console.log("handle open is control by child profile");
+  moveToProjects();
+})
 
 
 
@@ -177,10 +198,10 @@ function getBreakPoint(){
                     <img src="/services.svg" alt="services" className="ul_svg" />
                     <span className="ul_span">Services</span>
                    </button>
-                   <a href="#" className="nav_item" >
+                   <button onClick={moveToProjects} href="#" className="nav_item" >
                     <img src="/project-21.svg" alt="projects" className="ul_svg" />
                     <span className="ul_span">Projects</span>
-                   </a>
+                   </button>
                    <a href="#" className="nav_item" >
                     <img src="/about-successful-man-svgrepo-com.svg" alt="about" className="ul_svg" />
                     <span className="ul_span">About Me</span>
@@ -257,7 +278,7 @@ function getBreakPoint(){
             </header>
 
       
-        <Profile/>
+        <Profile  handleOpen={handleOpen}/>
         <Skills/>
         <Services windowQuality={windowQuality} windowWidth={windowResized}/>
         {props.children}

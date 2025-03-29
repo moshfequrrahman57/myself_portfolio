@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const Profile = () => {
+const Profile = ({handleOpen}) => {
 const main_div=useRef();
 //const [clicked,isClicked]=useState(false);
 
@@ -55,13 +55,11 @@ name.forEach(name=> observer.observe(name));
                 ring-2 ring-offset-2 ring-blue-400"><a href="https://rpoxut7ngy76jkgp.public.blob.vercel-storage.com/cv%20moshfequr%20fontend%20with%20cover_letter-zyNJrm3DctvK2TDvIVVqfWVIUaUXyu.pdf"
                 target='_blank'>Resume</a></button>
               </div>
-              {/* <div className="flex items-center justify-center">
-                  <button onClick={()=>{
-                    console.log("Checkout project clicked");
-                  }} className="my-1 px-1 md:px-5 py-2 font-semibold text-base inline-block rounded-lg bg-blue-400 hover:bg-cyan-200 
+               <div className="flex items-center justify-center">
+                  <button onClick={handleOpen} className="my-1 px-1 md:px-5 py-2 font-semibold text-base inline-block rounded-lg bg-blue-400 hover:bg-cyan-200 
                 hover:transition-colors text-white hover:text-black
                 ring-2 ring-offset-2 ring-blue-400"><a href="#">Checkout my Projects</a></button>
-              </div> */}
+              </div> 
               </div> 
         </div>
     );
