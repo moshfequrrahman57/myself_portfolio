@@ -11,12 +11,12 @@ const Contact = () => {
            <div className='flex flex-col md:flex-row md:flex-auto '>
            <div className='md:basis-1/2 flex flex-col md:justify-around p-0 md:p-3'>
                 <p className='dlText'>Contact with me</p>
-                <p className='dlsText my-3'>I am available on Remote & Full-time work. If you mind connect with me. </p>
+                <p className='dlsText my-3'>I am available on <span className='bg-orange-100 dark:bg-emerald-500'>Remote & Full-time work.</span> If you mind connect with me. </p>
                 <div className=" flex items-center justify-start mb-3 mt-3">
-              <a href="#"> <img src="/github-svgrepo-com.svg" alt="github" className="important_link_design" /></a>
-              <a href="#"> <img src="/facebook-svgrepo-com (1).svg" alt="facebook" className="important_link_design" /></a>
-              <a href="#"> <img src="/linkedin-round-svgrepo-com.svg" alt="linkedIn" className="important_link_design" /></a>
-              <a href="#"> <img src="/instagram-rounded-svgrepo-com.svg" alt="insta" className="important_link_design" /></a>
+              <a href="#"> <img src="/github-svgrepo-com.svg" alt="github" className="important_link_design2" /></a>
+              <a href="#"> <img src="/facebook-svgrepo-com (1).svg" alt="facebook" className="important_link_design2" /></a>
+              <a href="#"> <img src="/linkedin-round-svgrepo-com.svg" alt="linkedIn" className="important_link_design2" /></a>
+              <a href="#"> <img src="/instagram-rounded-svgrepo-com.svg" alt="insta" className="important_link_design2" /></a>
               </div>
               <a href="#" className="text-sm md:text-xl font-mono font-bold text-orange-800 dark:text-white text-wrap  
                hover:text-blue-600 dark:hover:text-red-100 flex items-center justify-start mt-3">

@@ -220,10 +220,10 @@ const handleOpen=useCallback(()=>{
 
     return (
       
-        <div ref={layout_div}  className="overflow-y-auto scroll-smooth h-screen m-0 p-0 box-border dark:bg-gradient-to-r  dark:from-slate-600 dark:to-slate-900 ">
+        <div ref={layout_div}  className="overflow-y-auto scroll-smooth h-screen m-0 p-0 box-border bg-gradient-to-r from-white to-white  dark:from-slate-600 dark:to-slate-900 ">
         <header className=" shadow-lg m-3 w-[calc(100%-24px)] fixed top-0 left-0 rounded-lg border
-        flex items-center justify-between bg-gradient-to-r from-slate-500 dark:from-slate-900 to-white z-30 dark:to-slate-400">
-            <figure><a href="#" className="cursor-pointer">
+        flex items-center justify-between bg-gradient-to-r from-slate-500  to-white z-30 dark:from-slate-900 dark:to-slate-400">
+            <figure><a href="" target="_self" className="cursor-pointer">
                 <img src="/signature-solid-svgrepo-com.svg" alt="logo" width={50} className="w-14 h-14 p-1 dark:filter_color_semi_white"/>
                 </a></figure>
             <div className="flex md:w-3/4 items-center justify-around">
@@ -267,7 +267,7 @@ const handleOpen=useCallback(()=>{
               <div className="md:hidden w-[calc[100%-32px]] flex items-center justify-start ml-4 ">
                   <button  className="my-1 px-5 py-1 font-semibold text-base inline-block rounded-lg bg-blue-400 hover:bg-cyan-200 
                 hover:transition-colors text-white hover:text-black
-                ring-2 ring-offset-2 ring-blue-400"><a href="#">Resume</a></button>
+                ring-2 ring-offset-2 ring-blue-400"><a href="https://rpoxut7ngy76jkgp.public.blob.vercel-storage.com/resume%20moshfequr%20frontend-aQ20ss4dovi2S4Xvv6fwPB4E1e4RV9.pdf" target="_blank">Resume</a></button>
               </div>
               
               <a href="#" className="md:hidden font-bold text-orange-800 dark:text-white text-wrap font-mono mx-4 w-[calc(100%-32px)] 
@@ -299,21 +299,21 @@ const handleOpen=useCallback(()=>{
               <a onClick={()=>{
                 setDarkMode("light");
                 mode.current.classList.toggle("active");
-              }} className="flex items-center dark:text-white font-semibold cursor-pointer">
+              }} className="flex items-center text-black dark:text-white font-semibold cursor-pointer">
                 <img  src="/light.svg" alt="light" className="w-8 h-8 p-1 mr-1 hover:filter_color_blue dark:filter_color_semi_white" />
                 <span>Light</span>
               </a>
               <a onClick={()=>{
                 setDarkMode("dark");
                 mode.current.classList.toggle("active");
-              }} className="flex items-center dark:text-white font-semibold cursor-pointer">
+              }} className="flex items-center text-black dark:text-white font-semibold cursor-pointer">
                 <img src="/dark.svg" alt="light" className="w-8 h-8 p-1 mr-1 hover:filter_color_blue dark:filter_color_semi_white" />
                 <span>Dark</span>
               </a>
               <a onClick={()=>{
                 setDarkMode("system");
                 mode.current.classList.toggle("active");
-              }} className="flex items-center dark:text-white font-semibold cursor-pointer">
+              }} className="flex items-center text-black dark:text-white font-semibold cursor-pointer">
                 <img  src="/system.svg" alt="light" className="w-8 h-8 p-1 mr-1 hover:filter_color_blue dark:filter_color_semi_white" />
                 <span>System</span>
               </a>

@@ -35,12 +35,16 @@ name.forEach(name=> observer.observe(name));
     return (
         <div id='main' ref={main_div}  className='overflow-y-auto scroll-smooth mx-5 mt-32 mb-16 py-16 w-[100%-40px] h-fit flex flex-col items-start md:items-center justify-start  md:justify-start'>
            
-            <p id='name' className=' text-4xl md:text-6xl font-extrabold animation_before mx-2 dark:text-white'>Md. Moshfequr Rahman.</p>
-            <p className='text-3xl md:text-5xl font-bold mt-2 animation_before delay-500 mx-2 dark:text-white'>Frontend developer</p>
+            <p id='name' className=' text-4xl md:text-6xl font-extrabold animation_before mx-2 text-black dark:text-white'>Md. Moshfequr Rahman.</p>
+            <p className='text-3xl md:text-5xl font-bold mt-2 animation_before delay-500 mx-2 text-black dark:text-white'>Frontend developer</p>
             
             <div className='text-2xl md:text-2xl font-bold mt-2 '>
-                <p className='animation_before delay-1000 mx-2 dark:text-white'>Expert in <img src="/react-svgrepo-com.svg" alt="react" className='w-8 h-8 inline-block' /> React  <span> & </span>
-                 <img src="/tailwind-svgrepo-com.svg" alt="react" className='w-8 h-8 inline-block' /> Tailwindcss </p>
+                <p className='animation_before delay-1000 mx-2 text-black dark:text-white'>Expert in <img src="/react-svgrepo-com.svg" alt="react" className='w-8 h-8 inline-block' /> <a href="https://react.dev/" target='_blank' 
+                className='underline text-black  dark:text-white hover:text-red-600'>React</a>   <span> & </span>
+                 <img src="/tailwind-svgrepo-com.svg" alt="react" className='w-8 h-8 inline-block' /> 
+                 <a href="https://v3.tailwindcss.com/" target='_blank' 
+                className='underline text-black  dark:text-white hover:text-red-600'>Tailwindcss</a>
+                 </p>
             </div>
             <div className="flex items-center justify-start mt-5 mx-2 ">
               <a href="https://github.com/moshfequrrahman57" target='_blank'> <img src="/github-svgrepo-com.svg" alt="github" className="important_link_in_profile" /></a>
@@ -52,7 +56,7 @@ name.forEach(name=> observer.observe(name));
               <div className="flex items-center justify-center">
                   <button  className="my-1 mx-4 px-4 md:px-4 py-2 font-semibold text-base inline-block rounded-lg bg-blue-400 hover:bg-cyan-200 
                 hover:transition-colors text-white hover:text-black
-                ring-2 ring-offset-2 ring-blue-400"><a href="https://rpoxut7ngy76jkgp.public.blob.vercel-storage.com/cv%20moshfequr%20fontend%20with%20cover_letter-zyNJrm3DctvK2TDvIVVqfWVIUaUXyu.pdf"
+                ring-2 ring-offset-2 ring-blue-400"><a href="https://rpoxut7ngy76jkgp.public.blob.vercel-storage.com/resume%20moshfequr%20frontend-aQ20ss4dovi2S4Xvv6fwPB4E1e4RV9.pdf"
                 target='_blank'>Resume</a></button>
               </div>
                <div className="flex items-center justify-center">

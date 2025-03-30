@@ -12,28 +12,28 @@ const About = () => {
            <div>
             <p className='pt-4 dlmText '>Job Experience</p>
             <div  className='  md:flex-row md:gap-4 flex flex-col gap-2 justify-between mt-2'>
-                <p className='dlxText rounded-full bg-emerald-100 md:bg-emerald-50  w-9 h-9 flex items-center justify-center font-bold'>1</p>
+                <p className='dlnText rounded-full bg-emerald-100   w-9 h-9 flex items-center justify-center font-bold'>1</p>
                 <p className='dlxText md:basis-1/3 '>Lecturer of ICT</p>
                 <p className='dlxText md:basis-1/3 '>Hollyland College </p>
                 <p className='dlxText md:basis-1/3 md:flex md:justify-end'>July-2017 to Aug-2017 </p>
             </div>
             <div  className='  md:flex-row md:gap-4 flex flex-col gap-2  justify-between mt-2 '>
-                <p className='dlxText rounded-full bg-emerald-100 md:bg-emerald-50  w-9 h-9 flex items-center justify-center font-bold'>2</p>
+                <p className='dlnText rounded-full bg-emerald-100   w-9 h-9 flex items-center justify-center font-bold'>2</p>
                 <p className='dlxText md:basis-1/3 '>Assistant Network Engineer</p>
                 <p className='dlxText md:basis-1/3 '>Info Sarker Phase-III Project &#8259; Bangladesh Computer Council.</p>
                 <p className='dlxText md:basis-1/3 md:flex md:justify-end '>Sep-2017 to July-2020</p>
             </div>
             <div  className='  md:flex-row md:gap-4 flex flex-col gap-2 justify-between mt-2'>
-                <p className='dlxText rounded-full bg-emerald-100 md:bg-emerald-50  w-9 h-9  flex items-center justify-center font-bold'>3</p>
+                <p className='dlnText rounded-full bg-emerald-100   w-9 h-9  flex items-center justify-center font-bold'>3</p>
                 <p className='dlxText md:basis-1/3 '>Assistant Programmer</p>
                 <p className='dlxText md:basis-1/3 '>Upazila ICT Training & Resource Center For Education  </p>
                 <p className='dlxText md:basis-1/3 md:flex md:justify-end'>Aug-2020 to Current</p>
             </div>
             <p className='pt-4 dlmText '>Skill Experience</p>
             <div  className='  md:flex-row md:gap-4 flex flex-col gap-2 justify-between mt-2'>
-                <p className='dlxText rounded-full bg-emerald-100 md:bg-emerald-50  w-9 h-9 flex items-center justify-center font-bold'>1</p>
+                <p className='dlnText rounded-full bg-emerald-100   w-9 h-9 flex items-center justify-center font-bold'>1</p>
                 <p className='dlxText md:basis-1/3  '><span className='bg-orange-100 dark:bg-emerald-500 p-[2px] '> React Next & Prisma</span></p>
-                <p className='dlxText md:basis-1/3 '>Online Learning on <a href="https://ostad.app/" className=' underline text-red-400 hover:text-blue-400'>Ostad</a> </p>
+                <p className='dlxText md:basis-1/3 '>Online Learning on <a href="https://ostad.app/" target='_blank' className=' underline text-red-400 hover:text-blue-400'>Ostad</a> </p>
                 <p className='dlxText md:basis-1/3 md:flex md:justify-end'>Oct-2023 to Dec-2023</p>
             </div>
             

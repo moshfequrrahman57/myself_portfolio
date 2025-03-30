@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const Project_card = (props) => {
 
-   useEffect(()=>{
-    (
-        ()=>{
-            console.log(props.img_url);
-        }
-    )()
-   },[])
+//    useEffect(()=>{
+//     (
+//         ()=>{
+//             console.log(props.img_url);
+//         }
+//     )()
+//    },[])
 
     return (
         <div className=' w-full h-fit  bg-gray-50 dark:bg-gray-800 rounded-2xl mb-4'>
@@ -22,18 +22,18 @@ const Project_card = (props) => {
         </div>
         <div className='md:grow  flex flex-col p-4'>
            <div className='flex justify-between'>
-           <p className='text-3xl dark:text-white font-serif'>{props.title}</p>
+           <p className='text-3xl text-black dark:text-white font-serif'>{props.title}</p>
            <div className='flex space-x-4'>
-           <a href="" target="_blank"  className="p-2 bg-sky-400 rounded-full hover:bg-sky-900 transition-colors">
+           <a href={props.glink} target="_blank"  className="p-2 bg-sky-400 rounded-full hover:bg-sky-900 transition-colors">
             <img src="/github-svgrepo-com.svg" alt="git" className='w-6 h-6 rounded-full hover:filter_color_semi_white' />
             </a>
-            <a  target="_blank"   className="p-2 bg-sky-400  rounded-full hover:bg-sky-900 transition-colors">
+            <a  href={props.llink} target="_blank"   className="p-2 bg-sky-400  rounded-full hover:bg-sky-900 transition-colors">
             <img src="/external-link-svgrepo-com.svg" alt="live" className='w-6 h-6 rounded-full hover:filter_color_semi_white' />
                </a>
            </div>
            </div>
-           <div className='flex'><p className='font-mono font-bold'>{props.category}</p></div>
-            <p className='dark:text-white'>{props.des}</p>
+           <div className='flex'><p className='font-mono font-bold text-gray-800 dark:text-white'>{props.category}</p></div>
+            <p className='dark:text-gray-50 text-gray-700'>{props.des}</p>
         </div>
         </div>
       

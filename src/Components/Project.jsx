@@ -10,14 +10,26 @@ const Project = () => {
         portfolio: "This is my portfolio project. This project is developed by react and Tailwindcss.  A lot of transactional operations  reflect here which is developed by Tailwindcss. Animating navbar is developed by clip path and transactions. Multiple components, multiple states and multiple hooks are managed by react. The most prominent think is selector dark mode manually   controlled yourself that link with device theme color mode.",
        
     }
+    let project_git_link={
+        foodie:"https://github.com/moshfequrrahman57/foodie",
+        snek: "https://github.com/moshfequrrahman57/Project-1-Responsive-Extended-Navigation",
+        login:"https://github.com/moshfequrrahman57/Log-In",
+        portfolio:"https://github.com/moshfequrrahman57/myself_portfolio"
+    }
+    let project_live_link={
+        foodie:"https://foodie-eight-green.vercel.app/",
+        snek: "https://project-1-responsive-extended-navigation.vercel.app/",
+        login:"https://log-in-flax.vercel.app/",
+        portfolio:"https://myself-portfolio.vercel.app/"
+    }
 
     return (
         <div className=' mx-5 my-2 w-[calc(100%-40px)]'>
-        <header className='text-4xl font-extrabold mb-5 dark:text-white'>Projects</header>
-        <Project_card img_url="/foodie.PNG" des={description.foodie} title="Foodie" category="React &#8226; Tailwindcss &#8226; API"/>
-        <Project_card img_url="/snek.png" des={description.snek} title="Snek" category="Tailwindcss &#8226; JS"/>
-        <Project_card img_url="/login.PNG" des={description.login} title="Log In" category="Tailwindcss &#8226; JS"/>
-        <Project_card img_url="/portfolio.PNG" des={description.portfolio} title="Portfolio" category="React &#8226; Tailwindcss"/>
+        <header className='text-4xl font-extrabold mb-5 text-black dark:text-white'>Projects</header>
+        <Project_card img_url="/foodie.PNG" glink={project_git_link.foodie} llink={project_live_link.foodie} des={description.foodie} title="Foodie" category="React &#8226; Tailwindcss &#8226; API"/>
+        <Project_card img_url="/snek.png" glink={project_git_link.snek} llink={project_live_link.snek} des={description.snek} title="Snek" category="Tailwindcss &#8226; JS"/>
+        <Project_card img_url="/login.PNG" glink={project_git_link.login} llink={project_live_link.login} des={description.login} title="Log In" category="Tailwindcss &#8226; JS"/>
+        <Project_card img_url="/portfolio.PNG" glink={project_git_link.portfolio} llink={project_live_link.portfolio} des={description.portfolio} title="Portfolio" category="React &#8226; Tailwindcss"/>
 
       
            
