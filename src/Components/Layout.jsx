@@ -23,7 +23,7 @@ const Layout = (props) => {
     const layout_div=useRef();
     const moveToSkill=()=>{
       console.log("Skill button clicked");
-      layout_div.current.scrollTop=600;
+      layout_div.current.scrollTop=530;
       nav.current.classList.toggle("clip-end-dup");
     }
     
@@ -54,15 +54,66 @@ const Layout = (props) => {
       console.log("Project button clicked");
       if(windowQuality===6){
         console.log("mobile");
-        layout_div.current.scrollTop=2250;
+        layout_div.current.scrollTop=2850;
       }
       else if(windowQuality===5){
         console.log("medium");
-        layout_div.current.scrollTop=1450;
+        layout_div.current.scrollTop=2050;
       }
       else if(windowQuality===4){
         console.log("large");
-        layout_div.current.scrollTop=1200;
+        layout_div.current.scrollTop=1750;
+      }
+      // layout_div.current.scrollTop=0;
+      nav.current.classList.toggle("clip-end-dup");
+    }
+    const checkToProjects=()=>{
+      console.log("Project button clicked");
+      if(windowQuality===6){
+        console.log("mobile");
+        layout_div.current.scrollTop=2850;
+      }
+      else if(windowQuality===5){
+        console.log("medium");
+        layout_div.current.scrollTop=2050;
+      }
+      else if(windowQuality===4){
+        console.log("large");
+        layout_div.current.scrollTop=1750;
+      }
+      // layout_div.current.scrollTop=0;
+    
+    }
+    const moveToAbout=()=>{
+      console.log("About button clicked");
+      if(windowQuality===6){
+        console.log("mobile");
+        layout_div.current.scrollTop=5750;
+      }
+      else if(windowQuality===5){
+        console.log("medium");
+        layout_div.current.scrollTop=5550;
+      }
+      else if(windowQuality===4){
+        console.log("large");
+        layout_div.current.scrollTop=3400;
+      }
+      // layout_div.current.scrollTop=0;
+      nav.current.classList.toggle("clip-end-dup");
+    }
+    const moveToContact=()=>{
+      console.log("Contact button clicked");
+      if(windowQuality===6){
+        console.log("mobile");
+        layout_div.current.scrollTop=6850;
+      }
+      else if(windowQuality===5){
+        console.dir(layout_div.current);
+        layout_div.current.scrollTop=6600;
+      }
+      else if(windowQuality===4){
+        console.log("large");
+        layout_div.current.scrollTop=4200;
       }
       // layout_div.current.scrollTop=0;
       nav.current.classList.toggle("clip-end-dup");
@@ -93,6 +144,7 @@ const Layout = (props) => {
     
      if(name==='system'){
       
+      console.dir(window.matchMedia('prefers-color-scheme:dark'));
       if((window.matchMedia('(prefers-color-scheme: dark)').matches)){
         console.log("System dark mode");
         document.documentElement.classList.add('dark');
@@ -160,7 +212,7 @@ function getBreakPoint(){
 // const [isOpen,setIsOpen]=useState(false);
 const handleOpen=useCallback(()=>{
   console.log("handle open is control by child profile");
-  moveToProjects();
+  checkToProjects();
 })
 
 
@@ -168,9 +220,9 @@ const handleOpen=useCallback(()=>{
 
     return (
       
-        <div ref={layout_div}  className="overflow-y-auto scroll-smooth h-screen m-0 p-0 box-border">
+        <div ref={layout_div}  className="overflow-y-auto scroll-smooth h-screen m-0 p-0 box-border dark:bg-gradient-to-r  dark:from-slate-600 dark:to-slate-900 ">
         <header className=" shadow-lg m-3 w-[calc(100%-24px)] fixed top-0 left-0 rounded-lg border
-        flex items-center justify-between bg-gradient-to-r from-slate-400 dark:from-slate-900 to-slate-50 z-30 dark:to-slate-400">
+        flex items-center justify-between bg-gradient-to-r from-slate-500 dark:from-slate-900 to-white z-30 dark:to-slate-400">
             <figure><a href="#" className="cursor-pointer">
                 <img src="/signature-solid-svgrepo-com.svg" alt="logo" width={50} className="w-14 h-14 p-1 dark:filter_color_semi_white"/>
                 </a></figure>
@@ -202,14 +254,14 @@ const handleOpen=useCallback(()=>{
                     <img src="/project-21.svg" alt="projects" className="ul_svg" />
                     <span className="ul_span">Projects</span>
                    </button>
-                   <a href="#" className="nav_item" >
+                   <button onClick={moveToAbout} href="#" className="nav_item" >
                     <img src="/about-successful-man-svgrepo-com.svg" alt="about" className="ul_svg" />
                     <span className="ul_span">About Me</span>
-                   </a>
-                   <a href="#" className="nav_item" >
+                   </button>
+                   <button onClick={moveToContact} href="#" className="nav_item" >
                     <img src="/contact-svgrepo-com.svg" alt="contact" className="ul_svg" />
                     <span className="ul_span">Contact</span>
-                   </a>  
+                   </button>  
                 
               </div>
               <div className="md:hidden w-[calc[100%-32px]] flex items-center justify-start ml-4 ">

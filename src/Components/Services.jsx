@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Services = (props) => {
 
@@ -156,7 +156,7 @@ function handle_gesture(){
 
     return (
   <div className=' flex flex-col items-start justify-center w-[calc(100%-40px)] h-fit mx-5 my-20'>
-         <p id='skill_title' className='font-bold text-4xl my-7'>Services</p>
+         <p id='skill_title' className='font-bold text-4xl  my-7 dark:text-white'>Services</p>
            <ul id="service_div" onTouchStart={touch_start} onTouchEnd={touch_end}    ref={slider} className='animation_service delay-500 list-none  rounded-lg 
            grid grid-flow-col grid_columns_1 sm:grid_columns_2 md:grid_columns_3 gap-4 scroll-smooth overflow-hidden  h-fit w-full
            '>
@@ -164,52 +164,52 @@ function handle_gesture(){
              
 
             <li>
-            <div ref={slider_item} className='border bg-gray-300 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
-            <img src="/design-systems-svgrepo-com.svg" alt="frontend" className='w-16 h-16' />
-           <p className='font-semibold text-2xl'>Frontend website Devlopment</p>
-           <p>Skilled in front-end development, proficient in creating component based web interfaces using  popular frameworks like 
+            <div ref={slider_item} className='border bg-gray-300 dark:bg-gray-800 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
+            <img src="/design-svgrepo-com.svg" alt="frontend" className='w-16 h-16 dark:filter_color_citrine' />
+           <p className='font-semibold text-2xl dark:text-white'>Frontend website Devlopment</p>
+           <p className='dark:text-white'>Skilled in front-end development, proficient in creating component based web interfaces using  popular frameworks like 
            <a href="https://react.dev/" target='_blank' className='underline text-blue-800 hover:text-red-600 dark:hover:text-white'> React </a>
            & <a href="https://v3.tailwindcss.com/" target='_blank' className='underline text-blue-800 hover:text-red-600 dark:hover:text-white'>Tailwindcss.</a>
            </p>
             </div>
             </li>
             <li>
-            <div ref={slider_item} className='border bg-gray-300 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
-            <img src="/responsive-svgrepo-com.svg" alt="responsive" className='w-16 h-16' />
-           <p className='font-semibold text-2xl'>Responsive Design</p>
-           <p>Experienced in creating responsive designs that ensure optimal user experience across all devices and screen sizes, utilizing techniques like media queries, flexible grids, and mobile-first design principles.
+            <div ref={slider_item} className='border bg-gray-300 dark:bg-gray-800 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
+            <img src="/responsive-svgrepo-com.svg" alt="responsive" className='w-16 h-16 dark:filter_color_citrine' />
+           <p className='font-semibold text-2xl dark:text-white'>Responsive Design</p>
+           <p className='dark:text-white'>Experienced in creating responsive designs that ensure optimal user experience across all devices and screen sizes, utilizing techniques like media queries, flexible grids, and mobile-first design principles.
            </p>
             </div>
             </li>
             <li>
-            <div ref={slider_item} className='border bg-gray-300 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
-            <img src="/api-svgrepo-com.svg" alt="api" className='w-16 h-16' />
-           <p className='font-semibold text-2xl'>API Integration</p>
-           <p>Proficient in API integration, enabling seamless communication between front-end applications and back-end services using RESTful APIs.
+            <div ref={slider_item} className='border bg-gray-300 dark:bg-gray-800 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
+            <img src="/api-svgrepo-com.svg" alt="api" className='w-16 h-16 dark:filter_color_citrine' />
+           <p className='font-semibold text-2xl dark:text-white'>API Integration</p>
+           <p className='dark:text-white'>Proficient in API integration, enabling seamless communication between front-end applications and back-end services using RESTful APIs.
            </p>
             </div>
             </li>
             <li>
-            <div ref={slider_item} className='border bg-gray-300 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
-            <img src="/photoshop-svgrepo-com.svg" alt="ps" className='w-16 h-16' />
-           <p className='font-semibold text-2xl'>Work with photoshop</p>
-           <p>Proficient in Adobe Photoshop for image editing, retouching, and graphic design.
+            <div ref={slider_item} className='border bg-gray-300 dark:bg-gray-800 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
+            <img src="/photoshop-svgrepo-com.svg" alt="ps" className='w-16 h-16 dark:filter_color_citrine' />
+           <p className='font-semibold text-2xl dark:text-white'>Work with photoshop</p>
+           <p className='dark:text-white'>Proficient in Adobe Photoshop for image editing, retouching, and graphic design.
            </p>
             </div>
             </li>
             <li>
-            <div ref={slider_item} className='border bg-gray-300 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
-            <img src="/github-svgrepo-com.svg" alt="git" className='w-16 h-16' />
-           <p className='font-semibold text-2xl'>Github</p>
-           <p>Git is a version control system that tracks changes in code, allowing collaboration, branching, and rollback. I use Git for managing code efficiently, handling repositories, and collaborating through commits, pushes, and merges.
+            <div ref={slider_item} className='border bg-gray-300 dark:bg-gray-800 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
+            <img src="/github-svgrepo-com.svg" alt="git" className='w-16 h-16 dark:filter_color_citrine' />
+           <p className='font-semibold text-2xl dark:text-white'>Github</p>
+           <p className='dark:text-white'>Git is a version control system that tracks changes in code, allowing collaboration, branching, and rollback. I use Git for managing code efficiently, handling repositories, and collaborating through commits, pushes, and merges.
            </p>
             </div>
             </li>
             <li>
-            <div ref={slider_item} className='border bg-gray-300 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
-            <img src="/datastore-svgrepo-com.svg" alt="backend" className='w-16 h-16' />
-           <p className='font-semibold text-2xl'>Backend Service</p>
-           <p>Skilled in backend website development using APIs, databases, and server-side frameworks like <a href="https://nextjs.org/" target='_blank' className='underline text-blue-800 hover:text-red-600 dark:hover:text-white'>Next.js</a> for seamless functionality.
+            <div ref={slider_item} className='border bg-gray-300 dark:bg-gray-800 shadow-sm w-full min-h-72  flex flex-col p-4 rounded-lg'>
+            <img src="/datastore-svgrepo-com.svg" alt="backend" className='w-16 h-16  dark:filter_color_citrine' />
+           <p className='font-semibold text-2xl dark:text-white'>Backend Service</p>
+           <p className='dark:text-white'>Skilled in backend website development using APIs, databases, and server-side frameworks like <a href="https://nextjs.org/" target='_blank' className='underline text-blue-800 hover:text-red-600 dark:hover:text-white'>Next.js</a> for seamless functionality.
            </p>
             </div>
             </li>
@@ -217,14 +217,14 @@ function handle_gesture(){
            </ul>
            <div className='flex flex-col items-center w-full'>
         <div className=' bottom-0  left-[50%-96px] md:left- flex items-center mb-3 mt-3'>
-        <img onClick={scrollLeft} src="/button-circle-round-arrow-left-svgrepo-com.svg" alt="arrow_left" className=' w-10 h-10   rounded-full border-2 cursor-pointer hover:filter_color_blue' />
+        <img onClick={scrollLeft} src="/button-circle-round-arrow-left-svgrepo-com.svg" alt="arrow_left" className=' w-10 h-10  rounded-full border-2 border-slate-400  cursor-pointer hover:filter_color_blue dark:filter_color_semi_white' />
         <div ref={one} className='w-3 md:w-5 h-1 border bg-[#CBD5E1]  mx-1 '></div>
           <div ref={two}  className='w-3 md:w-5 h-1 border bg-[#CBD5E1] mx-1'></div>
           <div ref={three}  className='w-3 md:w-5 h-1 border bg-[#CBD5E1]  mx-1'></div>
           <div ref={four}  className='w-3 md:w-5 h-1 border bg-[#CBD5E1]  mx-1'></div>
           <div ref={five}  className=' md:hidden w-3 md:w-5 h-1 border bg-[#CBD5E1]  mx-1'></div>
           <div ref={six} className=' sm:hidden w-3 md:w-5 h-1 border bg-[#CBD5E1]  mx-1'></div>
-          <img onClick={scrollRight} src="/button-circle-round-arrow-left-svgrepo-com.svg" alt="arrow right" className=' w-10 h-10  rotate-180 rounded-full border-2 cursor-pointer hover:filter_color_blue' />
+          <img onClick={scrollRight} src="/public/button-circle-round-arrow-left-svgrepo-com.svg" alt="arrow right" className=' w-10 h-10  rotate-180 rounded-full border-2 border-slate-400  cursor-pointer hover:filter_color_blue dark:filter_color_semi_white' />
          </div>
          </div>
         

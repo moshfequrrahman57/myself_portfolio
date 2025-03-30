@@ -113,7 +113,7 @@
         @apply mx-2 md:px-1 text-gray-900 font-bold text-lg md:text-base flex items-center justify-center dark:text-white;
     }
     .skill_card{
-        @apply w-full  border flex flex-col items-center justify-start  bg-slate-100 shadow-md p-4 rounded-md;
+        @apply w-full  border flex flex-col items-center justify-start  bg-slate-100 dark:bg-slate-800 shadow-md p-4 rounded-md;
     }
     .dlText{
         @apply text-3xl font-bold text-gray-800  dark:text-gray-50 

@@ -35,11 +35,11 @@ name.forEach(name=> observer.observe(name));
     return (
         <div id='main' ref={main_div}  className='overflow-y-auto scroll-smooth mx-5 mt-32 mb-16 py-16 w-[100%-40px] h-fit flex flex-col items-start md:items-center justify-start  md:justify-start'>
            
-            <p id='name' className=' text-4xl md:text-6xl font-extrabold animation_before mx-2'>Md. Moshfequr Rahman.</p>
-            <p className='text-3xl md:text-5xl font-bold mt-2 animation_before delay-500 mx-2 '>Frontend developer</p>
+            <p id='name' className=' text-4xl md:text-6xl font-extrabold animation_before mx-2 dark:text-white'>Md. Moshfequr Rahman.</p>
+            <p className='text-3xl md:text-5xl font-bold mt-2 animation_before delay-500 mx-2 dark:text-white'>Frontend developer</p>
             
             <div className='text-2xl md:text-2xl font-bold mt-2 '>
-                <p className='animation_before delay-1000 mx-2'>Expert in <img src="/react-svgrepo-com.svg" alt="react" className='w-8 h-8 inline-block' /> React  <span> & </span>
+                <p className='animation_before delay-1000 mx-2 dark:text-white'>Expert in <img src="/react-svgrepo-com.svg" alt="react" className='w-8 h-8 inline-block' /> React  <span> & </span>
                  <img src="/tailwind-svgrepo-com.svg" alt="react" className='w-8 h-8 inline-block' /> Tailwindcss </p>
             </div>
             <div className="flex items-center justify-start mt-5 mx-2 ">

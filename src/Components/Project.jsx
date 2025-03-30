@@ -13,7 +13,7 @@ const Project = () => {
 
     return (
         <div className=' mx-5 my-2 w-[calc(100%-40px)]'>
-        <header className='text-4xl font-extrabold mb-5'>Projects</header>
+        <header className='text-4xl font-extrabold mb-5 dark:text-white'>Projects</header>
         <Project_card img_url="/foodie.PNG" des={description.foodie} title="Foodie" category="React &#8226; Tailwindcss &#8226; API"/>
         <Project_card img_url="/snek.png" des={description.snek} title="Snek" category="Tailwindcss &#8226; JS"/>
         <Project_card img_url="/login.PNG" des={description.login} title="Log In" category="Tailwindcss &#8226; JS"/>
