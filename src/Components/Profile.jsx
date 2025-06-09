@@ -56,7 +56,7 @@ name.forEach(name=> observer.observe(name));
               <div className="flex items-center justify-center">
                   <button  className="my-1 mx-4 px-4 md:px-4 py-2 font-semibold text-base inline-block rounded-lg bg-blue-400 hover:bg-cyan-200 
                 hover:transition-colors text-white hover:text-black
-                ring-2 ring-offset-2 ring-blue-400"><a href="https://rpoxut7ngy76jkgp.public.blob.vercel-storage.com/resume%20moshfequr%20frontend-ye5vvsIjEcJ4Thj9GmMDXXqXeFXbx4.pdf"
+                ring-2 ring-offset-2 ring-blue-400"><a href="https://flowcv.com/resume/79rmuni2bos4"
                 target='_blank'>Resume</a></button>
               </div>
                <div className="flex items-center justify-center">
