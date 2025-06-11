@@ -168,8 +168,9 @@ function handle_gesture(){
             <img src="/design-svgrepo-com.svg" alt="frontend" className='w-16 h-16 dark:filter_color_citrine' />
            <p className='font-semibold text-2xl text-black dark:text-white'>Frontend website Devlopment</p>
            <p className='dark:text-white text-gray-700'>Skilled in front-end development, proficient in creating component based web interfaces using  popular frameworks like 
-           <a href="https://react.dev/" target='_blank' className='underline text-blue-800 hover:text-red-600 dark:hover:text-white'> React </a>
-           & <a href="https://v3.tailwindcss.com/" target='_blank' className='underline text-blue-800 hover:text-red-600 dark:hover:text-white'>Tailwindcss.</a>
+           <a href="https://react.dev/" target='_blank' className='underline text-blue-800 hover:text-red-600 dark:hover:text-white'> React , </a>
+           <a href="https://v3.tailwindcss.com/" target='_blank' className='underline text-blue-800 hover:text-red-600 dark:hover:text-white'>Tailwindcss , </a>
+           <a href="https://nextjs.org/" target='_blank' className='underline text-blue-800 hover:text-red-600 dark:hover:text-white'>Next.js</a>
            </p>
             </div>
             </li>

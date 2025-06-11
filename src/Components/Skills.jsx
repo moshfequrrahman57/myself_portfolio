@@ -73,10 +73,10 @@ const Skills = () => {
                 AXIOS &#8259; Async &#8259; Post-man.
                  </p></div>
             <div className="skill_card animation_skill delay-700 ">
-                <img src="/photoshop-svgrepo-com.svg" alt="photoshop" className='w-14 h-14 dark:filter_color_semi_white' />
-                <p className='font-bold text-2xl text-black dark:text-white'>Photoshop</p>
-                <p className='text-lg text-wrap text-gray-700 dark:text-white'>&#10687;&#160;Layers &#8259;
-                Masking &#8259; Selection.
+                <img src="/next-js-svgrepo-com.svg" alt="photoshop" className='w-14 h-14 dark:filter_color_semi_white' />
+                <p className='font-bold text-2xl text-black dark:text-white'>Next.js</p>
+                <p className='text-lg text-wrap text-gray-700 dark:text-white'>&#10687;&#160;Page Router &#8259;
+                Image Optimization &#8259; Data Fetching &#8259; SSR & CSR.
                  </p></div>
             <div className="skill_card animation_skill delay-500 ">
                 <img src="/github-svgrepo-com.svg" alt="git" className='w-14 h-14  dark:filter_color_semi_white' />

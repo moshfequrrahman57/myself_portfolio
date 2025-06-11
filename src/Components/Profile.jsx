@@ -41,9 +41,9 @@ name.forEach(name=> observer.observe(name));
             <div className='text-2xl md:text-2xl font-bold mt-2 '>
                 <p className='animation_before delay-1000 mx-2 text-black dark:text-white'>Expert in <img src="/react-svgrepo-com.svg" alt="react" className='w-8 h-8 inline-block' /> <a href="https://react.dev/" target='_blank' 
                 className='underline text-black  dark:text-white hover:text-red-600'>React</a>   <span> & </span>
-                 <img src="/tailwind-svgrepo-com.svg" alt="react" className='w-8 h-8 inline-block' /> 
-                 <a href="https://v3.tailwindcss.com/" target='_blank' 
-                className='underline text-black  dark:text-white hover:text-red-600'>Tailwindcss</a>
+                 <img src="/next-js-svgrepo-com.svg" alt="react" className='w-8 h-8 inline-block' /> 
+                 <a href="https://nextjs.org/" target='_blank' 
+                className='underline text-black  dark:text-white hover:text-red-600'> Next.js</a>
                  </p>
             </div>
             <div className="flex items-center justify-start mt-5 mx-2 ">
