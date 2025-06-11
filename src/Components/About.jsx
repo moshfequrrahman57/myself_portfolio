@@ -25,8 +25,8 @@ const About = () => {
             </div>
             <div  className='  md:flex-row md:gap-4 flex flex-col gap-2 justify-between mt-2'>
                 <p className='dlnText rounded-full bg-emerald-100   w-9 h-9  flex items-center justify-center font-bold'>3</p>
-                <p className='dlxText md:basis-1/3 '>Assistant Programmer</p>
-                <p className='dlxText md:basis-1/3 '>Upazila ICT Training & Resource Center For Education  </p>
+                <p className='dlxText md:basis-1/3 '>Front-end Web Developer</p>
+                <p className='dlxText md:basis-1/3 '>ICT Resource Center  </p>
                 <p className='dlxText md:basis-1/3 md:flex md:justify-end'>Aug-2020 to Current</p>
             </div>
             <p className='pt-4 dlmText '>Skill Experience</p>
